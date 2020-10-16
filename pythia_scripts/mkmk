@@ -1,0 +1,1 @@
+g++ main01.cc -o main01 -w -I../../pythia8303/include -O2 -std=c++11 -pedantic -W -Wall -Wshadow -fPIC  -L../../pythia8303/lib -Wl,-rpath,../../pythia8303/lib -lpythia8 -ldl -L/home/andrea/root//lib -Wl,-rpath,/home/andrea/root//lib -lCore `root-config --cflags --glibs`
