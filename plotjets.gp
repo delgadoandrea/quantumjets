@@ -6,4 +6,4 @@ set xlabel 'p_x [GeV]'
 set ylabel 'p_y [GeV]'
 set zlabel 'p_z [GeV]'
 splot 'out.particles' u 1:2:3 w l t 'particles',\
-      'out.particlesdimod'      u 1:2:3 w l lw 2 t 'quantum jet'
+      'out.particlesqujet'      u 1:2:3 w l lw 2 t 'quantum jet (QPU)'
