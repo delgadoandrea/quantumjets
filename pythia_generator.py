@@ -12,7 +12,7 @@ import sys
 
 def generator(cut = 0.0):
     params = {"Beams:idA" : "11", "Beams:idB" : "-11","Beams:eCM": 91.1876, "WeakSingleBoson:ffbar2gmZ" : "on", "23:onMode": "off", "23:onIfAny": "1 2 3 4 5", "PDF:lepton": "off"}
-    pythia = Pythia(params =params, random_state=1)
+    pythia = Pythia(params =params)#, random_state=1)
 
     # Consider only final-state particles
     selection = ((STATUS == 1) & ~HAS_END_VERTEX)
